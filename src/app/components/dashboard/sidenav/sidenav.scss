@@ -1,0 +1,43 @@
+.sidenav {
+  width: 250px;
+  height: 100vh;
+  background-color: #c0e507;
+  color: rgb(16, 15, 15);
+  padding: 1rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #b0d406;
+  }
+
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: block;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #eff30f;
+
+        a {
+          display: block;
+          padding: 1rem 2rem;
+          color: white;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #121211;
+          }
+        }
+      }
+    }
+  }
+}
